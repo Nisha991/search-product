@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar__contents">
+            <img src="images/logo.svg" height="52.26px" width="246px" alt="logo">
+            <a href="#" class="toggle__nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar__contents__items">
+                <span>Home</span>
+                <span>How To Start</span>
+                <span>Calculate Saving</span>
+                <span>FAQ</span>
+                <span>Contact</span>
+            </div>     
+            <button>Get Started</button>   
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__content__text">
+                Search from products and get the <span> best prices</span> in the market.
+            </div>
+            <div class="banner__content__img">
+                <img class="banner__contents__first__content__image" src="images/svg1.svg">
+            </div>
+            <div class="banner__content__searchbar">
+                <img src="images/zoom-2.svg">
+                <input placeholder='Try "iPhone 12"'>
+                <select name="options" id="options" class="select__icon">
+                    <option value="relevance">Relevance</option>
+                    <option value="O2">option 2</option>
+                    <option value="O3">option 3</option>
+                    <option value="O4">option 4</option>
+                </select>
+                <span>Search Product</span>
+            </div>
+        </div>
+        <div class="banner__end__text">
+            <span class="banner__end">
+                <p>You have a shop? </p>
+                <div class="banner__end__link">
+                    <img src="images/down-arrow.svg" height="32px" alt="">
+                    <a href="#"><p>Save 20% in Google Shopping ads</p></a>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__elements">
+            <div class="container__elements__left">
+                <img src="images/Search page illustration 2.svg" alt="svg image"> 
+                <p>Certified by:</p>
+                <img src="images/google.png" class="google__certification" alt="goole certification">
+            </div>
+            <div class="container__elements__right">
+                <h1>Book Google Shopping ads through us and <span>save 20%.</span> For shops of any size.</h1>
+                <button>Start now</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle__nav')[0];
+        const navbar = document.getElementsByClassName('navbar__contents__items')[0];
+        
+        toggleButton.addEventListener('click', function(){
+            navbar.classList.toggle('active');
+        })
+   </script>
+</body>
+</html>
